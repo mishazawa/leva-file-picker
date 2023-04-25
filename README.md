@@ -1,15 +1,13 @@
 # File picker for leva
 
-## How to use
-
 ```tsx
-import { file as filePlugin } from "file-plugin";
+import { pluginFile } from "plugin-file";
 
 function onChange(file: File) {
   // do something with file
 }
 
 const controls = useControls({
-  File: filePlugin({ onChange }),
+  File: pluginFile({ onChange }),
 });
 ```
