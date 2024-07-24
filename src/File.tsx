@@ -6,7 +6,7 @@ import { useDropzone } from "react-dropzone";
 import { DropZone, FileContainer, Instructions, Remove } from "./StyledFile";
 
 export function FileComponent() {
-  const { label, value, onUpdate, disabled } = useInputContext<any>();
+  const { label, value, onUpdate, disabled, settings } = useInputContext<any>();
 
   const onDrop = useCallback(
     (acceptedFiles: string | any[]) => {
@@ -27,7 +27,8 @@ export function FileComponent() {
     maxFiles: 1,
     onDrop,
     disabled,
-  });
+    accept: settings.accept,
+ });
 
   const { Label, Row } = Components;
   return (

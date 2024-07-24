@@ -1,5 +1,16 @@
 # File picker for leva
 
+## API
+
+```tsx
+
+pluginFile({
+    onChange: (file: File) => void,
+    accept?: string,
+})
+
+```
+
 ```tsx
 import { pluginFile } from "plugin-file";
 
