@@ -4,7 +4,7 @@
 
 ```tsx
 
-pluginFile({
+filePicker({
     onChange: (file: File) => void,
     accept?: string,
 })
@@ -12,13 +12,13 @@ pluginFile({
 ```
 
 ```tsx
-import { pluginFile } from "plugin-file";
+import { filePicker } from "leva-file-picker";
 
 function onChange(file: File) {
   // do something with file
 }
 
 const controls = useControls({
-  File: pluginFile({ onChange }),
+  File: filePicker({ onChange }),
 });
 ```
