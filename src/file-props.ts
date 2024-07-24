@@ -5,6 +5,6 @@ export const normalize = (
 ) => {
   return {
     value: input,
-    settings: { accept: input.accept }
+    settings: { accept: input?.accept }
   };
 };
