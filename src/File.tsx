@@ -2,7 +2,7 @@ import React from "react";
 
 import { useCallback } from "react";
 import { useInputContext, Components } from "leva/plugin";
-import { useDropzone } from "react-dropzone";
+import { DropzoneOptions, useDropzone } from "react-dropzone";
 import { DropZone, FileContainer, Instructions, Remove } from "./StyledFile";
 
 export function FileComponent() {
@@ -28,7 +28,7 @@ export function FileComponent() {
     onDrop,
     disabled,
     accept: settings.accept,
- });
+ } as DropzoneOptions);
 
   const { Label, Row } = Components;
   return (
