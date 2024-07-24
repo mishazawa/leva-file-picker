@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "File picker for leva",
   "license": "MIT",
+  "main": "dist/leva-file-picker.cjs.js",
+  "module": "dist/leva-file-picker.esm.js",
+  "types": "dist/leva-file-picker.cjs.d.ts",
   "dependencies": {
-    "@types/react": "^18.2.0",
-    "leva": "^0.9.34",
-    "react": ">=16.8.0",
     "react-dropzone": "^14.2.3"
+  },
+  "peerDependencies": {
+    "leva": ">=0.9.23",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   }
 }
